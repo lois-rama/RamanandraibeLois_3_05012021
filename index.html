@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a7bb10ddf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Ohmyfood!</title>
@@ -15,14 +17,14 @@
     </header>
     <main>
         <section class="localisation">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="localisation_icon fas fa-map-marker-alt"></i>
             <span class="localisation_text">
             Paris, Belleville
             </span>
         </section>
 
         <section class="presentation">
-            <h2 class="presentation_title">Réservez le menu qui vous convient</h2>
+            <h1 class="presentation_title">Réservez le menu qui vous convient</h1>
             <p class="presentation_subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <a class="explore-link" href="#restaurant">
                 Explorez nos restaurants
@@ -30,23 +32,23 @@
         </section>
     
         <section class="fonctionnement">
-            <div class="fonctionnement-container">
+            <!-- <div class="fonctionnement-container"> -->
                 <h2>Fonctionnement</h2>
-                <ol>
-                    <li>
-                        <i class="fas fa-mobile-alt"></i>
+                <ol class="fonctionnement_list">
+                    <li class="fonctionnement_list-item">
+                        <i class="fonctionnement_list-icon fas fa-mobile-alt"></i>
                         <span>Choisissez un restaurant</span>
                     </li>
-                    <li>
-                        <i class="fas fa-list-ul"></i>
+                    <li class="fonctionnement_list-item">
+                        <i class="fonctionnement_list-icon fas fa-list-ul"></i>
                         <span>Composez votre menu</span>
                     </li>
-                    <li>
-                        <i class="fas fa-store"></i>
+                    <li class="fonctionnement_list-item">
+                        <i class="fonctionnement_list-icon fas fa-store"></i>
                         <span>Dégustez au restaurant</span>
                     </li>
                 </ol>
-            </div>
+            <!-- </div> -->
         </section>
 
         <section id="restaurant">
@@ -60,6 +62,10 @@
                             <figcaption>
                                 <h3 class="restaurant-name">La palette du goût</h3>
                                 <p class="restaurant-localisation">Ménilmontant</p>
+                                <buttton class="like_btn">
+                                    <i class=" heart-outline far fa-heart"></i>
+                                    <i class=" heart-solid fas fa-heart"></i>
+                                </buttton>
                             </figcaption>
                         </figure>
                     </a>
@@ -71,7 +77,8 @@
                                 <p class="restaurant-localisation">Charonne</p>
                             </figcaption>
                         </figure>
-                    </a>                    <a href="">
+                    </a>                    
+                    <a href="">
                         <figure class="restaurant_card">
                             <img class="card_img" src="./images/restaurants/medium/a-la-française.jpg" alt="">
                             <figcaption>
@@ -79,7 +86,8 @@
                                 <p class="restaurant-localisation">Cité Rouge</p>
                             </figcaption>
                         </figure>
-                    </a>                    <a href="">
+                    </a>                    
+                    <a href="">
                         <figure class="restaurant_card">
                             <img class="card_img" src="./images/restaurants/medium/le-delice-des-sens.jpg" alt="">
                             <figcaption>

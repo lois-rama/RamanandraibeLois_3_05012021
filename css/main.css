@@ -1,0 +1,156 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.342);
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.342);
+  position: relative;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #EAEAEA;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.localisation_icon {
+  margin-right: 0.5rem;
+  color: #353535;
+}
+
+.localisation_text {
+  font-weight: 600;
+  color: #353535;
+}
+
+.presentation {
+  text-align: center;
+  background-color: #F6F6F6;
+  padding: 2rem;
+}
+
+.presentation_title {
+  margin-top: 0;
+}
+
+.presentation_subtitle {
+  font-weight: 300;
+}
+
+.fonctionnement h2 {
+  margin-left: 2rem;
+}
+
+.fonctionnement_list {
+  list-style: none;
+  padding: 0 0 0 1rem;
+  counter-reset: list;
+}
+
+.fonctionnement_list-icon {
+  color: #ACACAC;
+  padding: 0 0.8rem 0 0.5rem;
+}
+
+.fonctionnement_list-item {
+  counter-increment: list;
+  background: #F6F6F6;
+  margin: 1.5rem 1rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+  position: relative;
+}
+
+.fonctionnement_list-item::before {
+  content: counter(list);
+  background: #9356DC;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  position: absolute;
+  left: -0.75rem;
+}
+
+.fonctionnement_list-item span {
+  font-weight: 500;
+}
+
+.restaurant-container {
+  background-color: #F6F6F6;
+}
+
+.restaurant-container h2 {
+  margin: 0 0 0 2rem;
+  padding-top: 3rem;
+}
+
+.restaurant_card {
+  background-color: white;
+  position: relative;
+  color: black;
+  border-radius: 20px;
+  margin: 2rem;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.restaurant_card h3 {
+  margin: 0.5rem 0 0 1rem;
+}
+
+.restaurant_card p {
+  margin: 0.2rem 0 0 1rem;
+}
+
+.card_img {
+  height: 10rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_img-new {
+  background-color: #99E2D0;
+  color: #2c927a;
+  font-weight: 600;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  padding: 0.4rem 0.8rem;
+}
+/*# sourceMappingURL=main.css.map */
