@@ -1,131 +1,24 @@
-// VARIABLES
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$third-color: #99E2D0;
-$light-grey:#F6F6F6;
-$grey: #EAEAEA;
-$dark-grey:#353535;
-$shadow:0px 0px 15px rgba(0, 0, 0, 0.120);
+@import './_variables';
+@import'./_extend';
+@import'./_homepage';
+@import'./menupages';
 
 body{
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 a{
     text-decoration: none;
 }
+ul{
+    list-style: none;
+    padding: 0
+}
 
 header{
-    display: flex;
-    justify-content: center;
+    @extend %justify-center;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.342);
     position: relative;
 }
-.localisation{
-    display: flex;
-    justify-content: center;
-    background-color: $grey;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-
-        &_icon{
-           margin-right: 0.5rem;
-           color:$dark-grey ;
-        }
-        &_text{
-            font-weight: 600;
-            color: $dark-grey;
-        }
-}
-.presentation{
-    text-align: center;
-    background-color: $light-grey;
-    padding: 2rem;
-    
-        &_title{
-           margin-top: 0;
-        }
-        &_subtitle{
-           font-weight:300;
-        }
-}
-.fonctionnement h2{
-    margin-left: 2rem;
-}
-.fonctionnement_list{
-    list-style: none;
-    padding: 0 0 0 1rem;
-    counter-reset: list;  
-        &-icon{
-            color:#ACACAC;
-            padding: 0 0.8rem 0 0.5rem;
-        }
-}
-.fonctionnement_list-item{
-    counter-increment: list;
-    background: $light-grey;
-    margin: 1.5rem 1rem;
-    padding: 1.5rem;
-    border-radius: 20px;
-    box-shadow: $shadow;
-    position: relative;
-        &::before{
-            content: counter(list);
-            background:$primary-color;
-            height: 1.5rem;
-            width: 1.5rem;
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            position: absolute;
-            left: -0.75rem
-    }
-    span{
-        font-weight: 500;
-    }
-}
-.restaurant-container{
-    background-color: $light-grey;
-
-        h2{
-            margin: 0 0 0 2rem;
-            padding-top: 3rem;
-        }
-}
-.restaurant_card{
-    background-color: white;
-    position: relative;
-    color: black;
-    border-radius: 20px;
-    margin: 2rem;
-    box-shadow: $shadow;
-    overflow: hidden;
-
-        h3{
-            margin:0.5rem 0 0 1rem;
-        }
-        p{
-            margin:0.2rem 0 0 1rem;
-        }
-}
-.card_img{
-    height: 10rem;
-    width: 100%;
-    object-fit: cover;
-}
-.card_img-new{
-    background-color: $third-color;
-    color: #2c927a;
-    font-weight: 600;
-    font-size: 0.8rem;
-    border-radius: 3px;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.7rem;
-    padding: 0.4rem 0.8rem;
-}
-

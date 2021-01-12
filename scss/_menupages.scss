@@ -1,0 +1,102 @@
+.restaurant-img{
+    width: 100%;
+}
+.arrow{
+    @extend %align-center;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.2rem;
+    color: black;
+}
+.main-menu{
+    background-color: $light-grey;
+    margin-top: -4rem;
+    position: relative;
+    border-radius: 2rem 2rem 0;
+}
+.menu_content{
+    padding: 0 1rem;
+
+}
+.restaurant-title{
+    font-family: 'Shrikhand', cursive;
+    margin:0;
+    padding: 1rem;
+}
+.menu_like_btn{
+    position: absolute;
+    top:25px;
+    right: 3rem;
+    i{
+        font-size: 27px;
+        position: absolute;
+    }
+    &:hover{
+    .heart-outline{
+        opacity: 0;
+        transition: 0.3s;
+    }
+}
+}
+.menu_content-title{
+    font-weight: 300;
+    text-transform: uppercase;
+    position: relative;
+    &::after{
+        content: "";
+        width: 3rem;
+        height: .2rem;
+        background-color:$third-color;
+        position: absolute;
+        left: 0;
+        bottom: -0.2rem;
+    }
+}.menu_item{
+    background-color: white;
+    display: flex;
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.menu_item-content{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1;
+}
+
+.item_selection{
+    background-color: #99e2d0;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .5s;
+
+    &-icon{
+        color: white;
+        font-size: 30px;
+    }
+}
+
+.order-link{
+    display: inline-block;
+    background: linear-gradient($secondary-color, $primary-color);
+    color: white;
+    border-radius: 30px;
+    padding: 0.7rem;
+    box-shadow: $shadow;
+}
+
+@keyframes animation-selection{
+    
+}

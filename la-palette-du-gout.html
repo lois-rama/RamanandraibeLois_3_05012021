@@ -5,24 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a7bb10ddf.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Ohmyfood! - Restaurant "La palette du goût</title>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <a href="./index.html"><i class="fas fa-arrow-left"></i></a>
+            <a href="./index.html"><i class="fas fa-arrow-left arrow"></i></a>
             <img src="./images/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood!">
         </div>
     </header>
 
-    <img class="restaurant-img" src="./images/restaurants/big/la-palette-du-gout.jpg" alt="">
+    <img class="restaurant-img" src="./images/restaurants/la-palette-du-gout.jpg" alt="">
 
-    <main>
+    <main class="main-menu">
         <div class="menu-container">
             <h1 class="restaurant-title">La palette du goût</h1>
-            <buttton class="like_btn">
+            <buttton class="menu_like_btn">
                 <i class=" heart-outline far fa-heart"></i>
                 <i class=" heart-solid fas fa-heart"></i>
             </buttton>
@@ -56,8 +56,10 @@
             <section class="menu_content">
                 <h2 class="menu_content-title">Plats</h2>
                 <div class="menu_item">
-                    <h3>Filet de boeuf aux herbes</h3>
-                    <p>Accompagné de sa ribambelle de légumes</p>
+                    <div class="menu_item-content">
+                        <h3>Filet de boeuf aux herbes</h3>
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                    </div>
                     <p class="menu_item-price">40€</p>
                     <div class="item_selection">
                         <i class="item_selection-icon fas fa-check-circle"></i>
@@ -116,11 +118,11 @@
     </main>
     <footer>
         <div class="footer-container">
-            <h3 class="footer-title">ohmyfood</h3>
+            <h3 class="footer-logo">ohmyfood</h3>
             <nav>
                 <ul>
-                    <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a href=""><i class="fas fa-hands-helping"></i>Devnir partenaire</a></li>
+                    <li><a href="#"><i class="fas fa-utensils footer-icon"></i>Proposer un restaurant</a></li>
+                    <li><a href=""><i class="fas fa-hands-helping footer-icon"></i>Devenir partenaire</a></li>
                     <li><a href="">Mentions légales</a></li>
                     <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
