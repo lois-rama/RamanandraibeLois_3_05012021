@@ -64,9 +64,8 @@
     overflow: hidden;
     cursor: pointer;
     max-width: 100%;
-    animation: itemAppear 1.5s;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
+    animation: itemAppear 1.5s ease-in-out backwards;
+
     &-price{
         @extend %flex-end;
         margin: 0;

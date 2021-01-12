@@ -66,6 +66,91 @@
   }
 }
 
+@-webkit-keyframes loader {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(0.5rem);
+            transform: translateY(0.5rem);
+  }
+  75% {
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.loader {
+  font-family: 'Shrikhand', cursive;
+  font-size: 3rem;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-animation: loader 0.5s forwards;
+          animation: loader 0.5s forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(37, 255, 230, 0.938)), color-stop(49%, rgba(223, 118, 199, 0.931)), to(rgba(204, 45, 253, 0.938)));
+  background: linear-gradient(0deg, rgba(37, 255, 230, 0.938), rgba(223, 118, 199, 0.931) 49%, rgba(204, 45, 253, 0.938) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loader:after {
+  content: 'ohmyfood!';
+  color: white;
+  -webkit-animation: jump 0.5s 5;
+          animation: jump 0.5s 5;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-transition: ease-out;
+  transition: ease-out;
+}
+
 .localisation {
   background-color: #EAEAEA;
   padding-top: 0.75rem;
@@ -338,12 +423,8 @@ figcaption {
   overflow: hidden;
   cursor: pointer;
   max-width: 100%;
-  -webkit-animation: itemAppear 1.5s;
-          animation: itemAppear 1.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-          animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  -webkit-animation: itemAppear 1.5s ease-in-out backwards;
+          animation: itemAppear 1.5s ease-in-out backwards;
 }
 
 .menu_item-price {
