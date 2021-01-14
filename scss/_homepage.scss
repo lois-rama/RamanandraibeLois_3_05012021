@@ -66,6 +66,11 @@
     border-radius: 30px;
     padding: 0.7rem;
     box-shadow: $shadow;
+    transition: 0.3s;
+}
+.explore-link:hover{
+    filter: brightness(110%);
+    box-shadow:0px 0px 15px rgba(0, 0, 0, 0.315);
 }
 .fonctionnement h2{
     margin-left: 2rem;
@@ -195,16 +200,15 @@ figcaption{
     &:hover{
     .heart-outline{
         opacity: 0;
-        transition: 0.3s;
+        transition: 0.1s linear;
     }
 }
 }
-
 .heart-solid{
     opacity: 0;
-    -webkit-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
 }
 .heart-solid:hover{
     opacity: 1;
