@@ -5,18 +5,29 @@
     height: 100%;
     width: 100%;
     z-index: 50;
-    animation: loader 0.5s forwards;
+    animation: loader 0.3s forwards;
     animation-delay: 3s;
     background: linear-gradient(0deg, rgba(37, 255, 230, 0.938), rgba(223, 118, 199, 0.931) 49%, rgba(204, 45, 253, 0.938) 100%);
     display:flex;
+    flex-direction: column;
     align-items:center;
     justify-content:center;
 }
 .loader:after{
-    content: 'ohmyfood!';
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 5px solid rgba(255, 255, 255, 0.287);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spinner 1s 3 ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.spinner{
     color: white;
-    animation: jump 0.5s 5;
-    animation-timing-function: linear;
     transition: ease-out;
 }
 
@@ -45,7 +56,7 @@
         }
         &_subtitle{
            font-weight:300;
-           margin: 0 0 1.3 rem 0 ;
+           margin: 0 0 1.3rem 0 ;
         }
 }
 .explore-link{
@@ -67,6 +78,9 @@
             width: 1.2rem;
             color:#ACACAC;
             padding: 0 0.8rem 0 0.5rem;
+        }
+        @media screen and (min-width: 900px){
+            display: flex;
         }
 }
 .fonctionnement_list-item{
@@ -93,11 +107,24 @@
     span{
         font-weight: 500;
     }
+    @media screen and (min-width: 900px){
+        flex-grow: 1;
+    }
 }
 #restaurant{
     background-color: $light-grey;
     padding: 2rem;
 }
+.restaurant_cards-container{
+
+@media screen and (min-width: 1000px){
+        grid-template-columns: repeat(2,1fr);
+        display: grid;
+        column-gap: 2rem;
+        row-gap: 2rem;}
+}
+
+
 .restaurant_card{
     background-color: white;
     position: relative;
@@ -113,7 +140,9 @@
         p{
             margin:0.2rem 0 1rem 1rem;
         }
- 
+        @media screen and (min-width: 1000px){
+            margin:0
+        }
 }
 .new::after{
     content: 'Nouveau';
@@ -180,7 +209,6 @@ figcaption{
 .heart-solid:hover{
     opacity: 1;
     background: -webkit-linear-gradient($primary-color, $secondary-color);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

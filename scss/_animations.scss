@@ -31,3 +31,9 @@
 
 }
 }
+@keyframes spinner{
+  to {
+    transform: rotate(1turn);
+    z-index: -1;
+  }
+}
