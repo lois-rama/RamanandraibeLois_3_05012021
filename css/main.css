@@ -47,6 +47,7 @@
 
 .loader {
   font-family: 'Shrikhand', cursive;
+  color: white;
   font-size: 3rem;
   position: fixed;
   height: 100%;
@@ -54,7 +55,7 @@
   z-index: 50;
   animation: loader 0.3s forwards;
   animation-delay: 3s;
-  background: linear-gradient(0deg, rgba(37, 255, 230, 0.938), rgba(223, 118, 199, 0.931) 49%, rgba(204, 45, 253, 0.938) 100%);
+  background: linear-gradient(0deg, rgba(37, 255, 226, 0.938), rgba(223, 118, 199, 0.931) 49%, rgba(204, 45, 253, 0.938) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,11 +73,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.spinner {
-  color: white;
-  transition: ease-out;
 }
 
 .localisation {
@@ -280,12 +276,12 @@ figcaption {
 
 .card_like_btn:hover .heart-outline {
   opacity: 0;
-  transition: 0.1s linear;
+  transition: 0.1s ease-in-out;
 }
 
 .heart-solid {
   opacity: 0;
-  transition: 0.2s linear;
+  transition: 0.2s ease-in-out;
 }
 
 .heart-solid:hover {
@@ -350,6 +346,7 @@ figcaption {
 
 .menu_content {
   padding: 0 1rem;
+  min-width: 0;
 }
 
 .restaurant-title {
@@ -444,7 +441,6 @@ figcaption {
 .item_selection-icon {
   color: white;
   font-size: 25px;
-  transition: 1s;
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }

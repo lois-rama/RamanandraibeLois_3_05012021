@@ -42,6 +42,7 @@
 }
 .menu_content{
     padding: 0 1rem;
+    min-width: 0;
 }
 .restaurant-title{
     font-family: 'Shrikhand', cursive;
@@ -89,7 +90,7 @@
     cursor: pointer;
     max-width: 100%;
     animation: itemAppear 1.5s ease-in-out backwards;
-
+    
     &-price{
         @extend %flex-end;
         margin: 0;
@@ -112,7 +113,7 @@
         margin:0;
         overflow: hidden;
         white-space: nowrap;
-        text-overflow: ellipsis; 
+        text-overflow: ellipsis;
     }
     overflow: hidden;
     flex: 1;
@@ -128,7 +129,6 @@
     &-icon{
         color: white;
         font-size: 25px;
-        transition: 1s;
         transform: rotate(180deg);
         transition-duration: 0.5s;
     }
